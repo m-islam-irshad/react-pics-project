@@ -6,9 +6,9 @@ class SearchBar extends React.Component{
        console.log(event.target.value)
     }
 
-    // onInputClick(){
-    //     console.log("On Input clicked")
-    // }
+    onInputClick(){
+        console.log("On Input clicked")
+    }
 
     render(){
         return(
@@ -16,7 +16,9 @@ class SearchBar extends React.Component{
                 <form className="ui form">
                 <div className="field">
                     <label>Image Search</label>
-                    <input type="text" onChange={this.onInputChange} />
+                    <input type="text" onChange={this.onInputChange} 
+                        onClick={this.onInputClick}
+                    />
                     </div>
                 </form>
 
