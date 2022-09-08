@@ -21,3 +21,5 @@ root.render(
 )
 
 //unsplash.com/developers
+
+// error this.setState is not a function
