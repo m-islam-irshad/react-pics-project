@@ -3,7 +3,7 @@ import unsplash from "../API/unsplash";
 import SearchBar from "./SearchBar";
 import Validator from "./Validator";
 import ImageList from "./ImageList";
-
+import List from "./List";
 
 class App extends React.Component{
 
@@ -32,9 +32,9 @@ render(){
             Found: {this.state.images.length} images
         </div>
 
-        {/* <div>
-             <Validator/>
-         </div> */}
+       
+        {/* <Validator/> */} 
+        {/* <List/> */}
          <ImageList images={this.state.images}/>
         </div>
     );
